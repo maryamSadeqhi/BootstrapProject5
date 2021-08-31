@@ -11,9 +11,268 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class=" text-center py-5 ">
+                    <img src="./project-1/imag/web-design2.png" alt=""  style="width: 200px;" class=" mb-3">
+                    <h2>فرم خرید</h2>
+                    <p class=" lead">باور ما اینست که کاربران ایرانی لایق بهترین ها هستند و باید بهترین و بروزترین فیلم های آموزشی و مقالات در اختیار آنها قرار بگیرد تا بتوانند به سرعت پیشرفت کنند و جزء بهترین ها در صنعت طراحی و برنامه نویسی وب شوند . با ما همراه باشید تا بهترین ها رو لایق بهترین کاربران کنیم</p>
+        </div>
+        <div class=" row">
+            <div class=" col-8">
+                <h4>آدرس شما</h4>
+                <form class=" needs-validtion " novalidate>
+                    <div class="row">
+                        <div class=" col-6">
+                            <label for="Name" class=" form-label">نام</label>
+                            <input type="text" class="form-control" id="Name" placeholder="نام" aria-label="First name">
+                            <div class=" valid-feedback">
+                                لطفا نام را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                نام وارد شد
+                            </div>
+                        </div>
+                        <div class=" col-6">
+                            <label for="LastName">نام خانوادگی</label>
+                            <input type="text" class="form-control" id="LastName" placeholder="نام خانوادگی" aria-label="First name">
+                            <div class=" valid-feedback">
+                                لطفا نام  خانوادگی را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                نام خانوادگی را وارد کردید
+                            </div>
+                        </div>
+                        <div class=" mt-3">
+                            <label for="UserName">نام کاربری</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" id="UserName" placeholder="Username" aria-label="Username">
+                                <div class=" valid-feedback">
+                                    لطفا نام کاربری خود را وارد کنید
+                                </div>
+                                <div class=" valid-feedback">
+                                    نام کاربری وارد شد
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email (optional)" class="form-label">ایمیل (انتخابی)</label>
+                            <input type="text" class="form-control " id="Email (optional)" placeholder="Email.com" aria-label="Username">
+                            <div class=" valid-feedback">
+                                    ایمیل خود را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                ایمیل وارد شد
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Adres" class="form-label">آدرس</label>
+                            <input type="text" class="form-control " id="Adres" placeholder="تهران , تهران" aria-label="Username">
+                            <div class=" valid-feedback">
+                                آدرس خود را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                آدرس وارد شد
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Address 2 (optional)" class="form-label">آدرس 2 (انتخابی)</label>
+                            <input type="text" class="form-control " id="Address 2 (optional)" placeholder="بوشهر , بوشهر" aria-label="Username">
+                            <div class=" valid-feedback">
+                                آدرس ۲ را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                ادرس ۲ وارد شد
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-5">
+                                <label for="country">کشور</label>
+                                <select class="form-select form-select-sm form-control" name="country" id="country" aria-label=".form-select-sm example">
+                                    <option selected>انتخاب کنید ...</option>
+                                    <option value="1">ایران</option>
+                                </select>
+                                <div class=" valid-feedback">
+                                    کشور را وارد کنید
+                                </div>
+                                <div class=" valid-feedback">
+                                    کشور وارد شد
+                                </div>
+                            </div>
+                            <div class=" col-md-4">
+                                <label for="ostan">استان</label>
+                                <select class="form-select form-select-sm form-control" name="ostan" id="ostan" aria-label=".form-select-sm example">
+                                    <option selected>انتخاب کنید ...</option>
+                                    <option value="1">تهران</option>
+                                </select>
+                                <div class=" valid-feedback">
+                                 استان را وارد کنید
+                                </div>
+                                <div class=" valid-feedback">
+                                  استان وارد شد
+                                </div>
+                            </div>
+                            <div class=" col-md-3">
+                                <label for="City">شهر</label>
+                               <input type="text" id="City" placeholder="تهران"  class=" form-control">
+                                <div class=" valid-feedback">
+                                 شهر را وارد کنید
+                                </div>
+                                <div class=" valid-feedback">
+                                   شهر وارد شد
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class=" mb-4">
+                    <div class="row form-check">
+                        <div class=" col-12">
+                                <input class="form-check-input" type="checkbox" value="" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    قبل از ارسال سفارش برای هماهنگی تماس گرفته شود
+                                </label>
+                        </div>
+
+                        <div class=" col-12">
+                                <input class="form-check-input" type="checkbox" id="gridCheck-disabled" disabled>
+                                <label class="form-check-label" for="gridCheck-disabled">
+                                    ذخیره سازی اطلاعات برای خرید بعدی
+                                </label>
+                        </div>
+                    </div>
+                    <hr class=" mb-4">
+                    <h4 class="mb-3">نوع پرداخت</h4>
+                    <div class="form-check bank">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            بانک ملت
+                        </label>
+                      </div>
+                      <div class="form-check bank">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            بانک آینده
+                        </label>
+                      </div>
+                      <div class="form-check bank">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                زرین پال
+                            </label>
+                      </div>
+                      <div class=" row">
+                          <div class=" col-md-6 mt-4 px-2">
+                            <label for="CardholderName" class=" form-label">نام دارنده کارت</label>
+                            <input type="text" class="form-control" id="CardholderName" >
+                            <small class=" text-muted">لطفا نام دارنده کارت را به فارسی وارد کنید</small>
+                            <div class=" valid-feedback">
+                                نام دارنده کارت را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                نام دارنده کارت وارد شد
+                            </div>
+                          </div>
+                          <div class=" col-md-6 mt-4 ">
+                            <label for="CcreditCardName" class=" form-label">شماره کارت</label>
+                            <input type="text" class="form-control" id="CcreditCardName" >
+                            <div class=" valid-feedback">
+                                لطفا شماره کارت را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                شماره کارت را وارد کنید
+                            </div>
+                          </div>
+                      </div>
+                      <div class=" row">
+                          <div class=" col-md-3 mt-4 px-2">
+                            <label for="CardholderName2" class=" form-label">نام دارنده کارت</label>
+                            <input type="text" class="form-control" id="CardholderName2" >
+                            <div class=" valid-feedback">
+                                نام دارنده کارت را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                نام دارنده کارت وارد شد
+                            </div>
+                          </div>
+                          <div class=" col-md-3 mt-4 ">
+                            <label for="CcreditCardName2" class=" form-label">شماره کارت</label>
+                            <input type="text" class="form-control" id="CcreditCardName2" >
+                            <div class=" valid-feedback">
+                                لطفا شماره کارت را وارد کنید
+                            </div>
+                            <div class=" valid-feedback">
+                                شماره کارت را وارد کنید
+                            </div>
+                          </div>
+                      </div>
+                      <hr class=" mb-4">
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">ادامه و ثبت خرید</button>
+                      </div>
+                </form>
+            </div>
+
+            <div class=" col-4">
+                <h4 class=" d-flex justify-content-between align-items-center mb-4">
+                    <span class=" text-muted">سبد خرید شما</span>
+                    <span class="badge bg-warning rounded-circle align-items-center justify-content-center">4</span>
+                </h4>
+                <ul class=" list-group">
+                    <li class=" list-group-item d-flex justify-content-between align-items-center my-0">
+                        <div>
+                            <h6>عنوان محصول اول</h6>
+                            <small class=" text-muted">توضیح مختصر</small>
+                        </div>
+                        <span class=" text-muted">$12</span>
+                    </li>
+                    <li class=" list-group-item d-flex justify-content-between align-items-center my-0">
+                        <div>
+                            <h6>عنوان محصول اول</h6>
+                            <small class=" text-muted">توضیح مختصر</small>
+                        </div>
+                        <span class=" text-muted">$12</span>
+                    </li>
+                    <li class=" list-group-item d-flex justify-content-between align-items-center my-0">
+                        <div>
+                            <h6>عنوان محصول دوم</h6>
+                            <small class=" text-muted">توضیح مختصر</small>
+                        </div>
+                        <span class=" text-muted">$24</span>
+                    </li>
+                    <li class=" list-group-item d-flex justify-content-between align-items-center my-0 text-success bg-success bg-opacity-10">
+                        <div>
+                            <h6>آیتم سوم</h6>
+                            <small >توضیح مختصر</small>
+                        </div>
+                        <span >$50</span>
+                    </li>
+                    <li class=" list-group-item d-flex justify-content-between align-items-center my-0">
+                        <div>
+                            <p class="fs-5">جمع</p>
+                        </div>
+                        <span class=" text-muted">$40</span>
+                    </li>
+                </ul>
+                <div class=" card mt-2 p-2">
+                       <div class="input-group">
+                            <input type="text" class="form-control" placeholder=" کد تخفیف">
+                            <button class="btn btn-secondary" type="button" id="button-addon1">اعمال</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" my-5 pt-5 text-muted text-center">
+            <p>© 1396-1397 مجله آموزشی راکت</p>
+            <ul class=" list-inline">
+                <li class=" list-inline-item"><a href="#">حریم خصوصی</a></li>
+                <li class=" list-inline-item"><a href="#">قوانین</a></li>
+                <li class=" list-inline-item"><a href="#"> حریم خصوصی</a></li>
+            </ul>
+        </footer>
+    </div>
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
