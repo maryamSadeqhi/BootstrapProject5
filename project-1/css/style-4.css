@@ -1,0 +1,15 @@
+body{
+    direction: rtl;
+    font-family: Vazir;
+    text-align: right;
+    font-weight: 300;
+}
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 32rem;
+}
